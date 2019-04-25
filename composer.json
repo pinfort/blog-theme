@@ -1,0 +1,13 @@
+{
+    "name": "pinfort/october-blog-theme",
+    "description": "Blog theme for OctoberCMS by pinfort",
+    "type": "october-theme",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "pinfort",
+            "email": "ptg@nijitei.com"
+        }
+    ],
+    "require": {}
+}
