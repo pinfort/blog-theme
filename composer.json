@@ -9,5 +9,8 @@
             "email": "ptg@nijitei.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php": ">=7.0",
+        "rainlab/blog-plugin": "dev-master"
+    }
 }
