@@ -4,7 +4,7 @@ description = "Default layout"
 <html>
     <head>
         <meta charset="utf-8">
-        <title>{{ this.page.title }}</title>
+        <title>{{ this.page.title }} | Pinfort&apos;s blog</title>
         <meta name="description" content="{{ this.page.meta_description }}">
         <meta name="title" content="{{ this.page.meta_title }}">
         <meta name="author" content="pinfort">
@@ -15,14 +15,14 @@ description = "Default layout"
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         {% styles %}
     </head>
-    <body>
+    <body class="light-blue lighten-5">
         <!-- Header -->
         <header id="layout-header">
             {% partial 'site/header' %}
         </header>
 
         <!-- Content -->
-        <seciton id="layout-content">
+        <seciton id="layout-content" class="white">
             {% page %}
         </section>
 
