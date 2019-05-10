@@ -1,12 +1,6 @@
 <!-- Nav -->
-<nav id="layout-nav" role="navigation">
+<nav id="layout-nav" role="navigation" class="indigo z-depth-0">
     <div class="nav-wrapper">
-        <a href="{{ 'home'|page }}" class="brand-logo">Logo</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li class="{% if this.page.id == 'home' %}active{% endif %}"><a href="{{ 'home'|page }}">Basic concepts</a></li>
-            <li class="{% if this.page.id == 'ajax' %}active{% endif %}"><a href="{{ 'ajax'|page }}">AJAX framework</a></li>
-            <li class="{% if this.page.id == 'plugins' %}active{% endif %}"><a href="{{ 'plugins'|page }}">Plugin components</a></li>
-        </ul>
+        <a href="{{ 'home'|page }}" class="brand-logo center">Logo</a>
     </div>
 </nav>
