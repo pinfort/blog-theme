@@ -15,3 +15,7 @@ a {
 .transparent-white-text {
     color: #f3f9f9;
 }
+
+strong {
+    font-weight: 700;
+}
