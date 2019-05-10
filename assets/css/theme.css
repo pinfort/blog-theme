@@ -1,8 +1,7 @@
 body {
     color: #385765;
     background-color: #f3f9f9;
-    font-family: 'Lora', serif;
-    font-family: 'Noto Serif JP', serif;
+    font-family: 'Lora', 'Noto Serif JP', serif;
 }
 
 .cloudy-green {
