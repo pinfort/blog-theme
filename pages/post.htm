@@ -6,6 +6,21 @@ layout = "default"
 slug = "{{ :slug }}"
 categoryPage = 404
 ==
+<?php
+function onEnd()
+{
+    // Optional - set the page title to the post title
+    if (isset($this->post))
+        $this->page->title = $this->post->title;
+}
+?>
+==
 <div class="container">
-    {% component 'blogPost' %}
+    {% if post %}
+        <h1>{{ post.title }}</h1>
+
+        {% component 'blogPost' %}
+    {% else %}
+        <h1>Post not found</h1>
+    {% endif %}
 </div>
