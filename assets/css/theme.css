@@ -1,0 +1,16 @@
+body {
+    color: #385765;
+    background-color: #f3f9f9;
+}
+
+.cloudy-green {
+    background-color: #7fc4c1 !important;
+}
+
+a {
+    color: #7fc4c1 !important;
+}
+
+.transparent-white-text {
+    color: #f3f9f9;
+}
