@@ -7,7 +7,7 @@ slug = "{{ :slug }}"
 categoryPage = 404
 ==
 <?php
-function onStart()
+function onEnd()
 {
     // Optional - set the page title to the post title
     if (isset($this->post))
@@ -16,7 +16,7 @@ function onStart()
 ?>
 ==
 {% put title %}
-    {{ this.page.title }} | Pinfort&apos;s blog
+    {{ post.title }} | Pinfort&apos;s blog
 {% endput %}
 
 <div class="container">
