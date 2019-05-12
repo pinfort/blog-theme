@@ -4,7 +4,7 @@ description = "Default layout"
 <html>
     <head>
         <meta charset="utf-8">
-        <title>{{ this.page.title }} | Pinfort&apos;s blog</title>
+        <title>{% block title %}{{ this.page.title }} | Pinfort&apos;s blog{% endblock %}</title>
         <meta name="description" content="{{ this.page.meta_description }}">
         <meta name="title" content="{{ this.page.meta_title }}">
         <meta name="author" content="pinfort">
@@ -23,7 +23,9 @@ description = "Default layout"
 
         <!-- Content -->
         <main id="layout-content" role="main">
-            {% page %}
+            {% block content %}
+                {% page %}
+            {% endblock %}
         </main>
 
         <!-- Sidebar -->
