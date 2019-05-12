@@ -15,6 +15,10 @@ function onEnd()
 }
 ?>
 ==
+{% put title %}
+    {{ this.page.title }} | Pinfort&apos;s blog
+{% endput %}
+
 <div class="container">
     {% if post %}
         <h1>{{ post.title }}</h1>

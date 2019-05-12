@@ -1,6 +1,6 @@
 title = "Toppage"
 url = "/"
-layout = "toppage"
+layout = "default"
 
 [blogPosts]
 pageNumber = "{{ :page }}"
@@ -10,6 +10,10 @@ sortOrder = "published_at desc"
 categoryPage = 404
 postPage = "post"
 ==
+{% put title %}
+    Pinfort&apos;s blog
+{% endput %}
+
 <div class="container">
     {% component 'blogPosts' %}
 </div>
