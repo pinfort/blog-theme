@@ -1,0 +1,34 @@
+title = "Categories"
+url = "/categories/:slug?/:page?"
+layout = "default"
+is_hidden = 0
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = 0
+categoryPage = "categories"
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "{{ :slug }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "categories"
+postPage = "categories"
+==
+{% put title %}
+    {{ post.title }} | Pinfort&apos;s blog
+{% endput %}
+
+<div class="container">
+    {% if this.param.slug %}
+        <h1>Categories</h1>
+
+        {% component 'blogCategories' %}
+    {% else %}
+        <h1>Category</h1>
+
+        {% component 'blogPosts' %}
+    {% endif %}
+</div>
