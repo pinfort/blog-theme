@@ -19,3 +19,7 @@ a {
 strong {
     font-weight: 700;
 }
+
+pre, code {
+    font-family: Hack, monospace, sans-serif;
+}
