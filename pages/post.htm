@@ -14,8 +14,19 @@ categoryPage = 404
     {% if post %}
         <h1>{{ post.title }}</h1>
 
-        {% component 'blogPost' %}
+        {% partial 'site/post' post=post %}
     {% else %}
         <h1>Post not found</h1>
     {% endif %}
 </div>
+
+{% put scripts %}
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/lang-css.min.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded',function() {
+            prettyPrint();
+        });
+    </script>
+{% endput %}
