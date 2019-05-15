@@ -1,0 +1,23 @@
+title = "Category post"
+url = "/categories/:slug/:page?"
+layout = "default"
+is_hidden = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "{{ :slug }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "category-post"
+postPage = "post"
+==
+{% put title %}
+    {{ category.title }} | Pinfort&apos;s blog
+{% endput %}
+
+<div class="container">
+    <h1>category.title</h1>
+
+    {% component 'blogPosts' %}
+</div>
