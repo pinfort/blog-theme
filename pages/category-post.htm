@@ -13,11 +13,11 @@ categoryPage = "category-post"
 postPage = "post"
 ==
 {% put title %}
-    {{ category.title }} | Pinfort&apos;s blog
+    {{ category.name }} | Pinfort&apos;s blog
 {% endput %}
 
 <div class="container">
-    <h1>category.title</h1>
+    <h1>category.name</h1>
 
     {% component 'blogPosts' %}
 </div>
