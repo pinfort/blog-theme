@@ -1,0 +1,11 @@
+title = "feed"
+url = "/feed/:page?"
+is_hidden = 0
+
+[blogRssFeed]
+sortOrder = "created_at desc"
+postsPerPage = 10
+blogPage = "toppage"
+postPage = "post"
+==
+{% component 'blogRssFeed' %}
