@@ -1,9 +1,9 @@
 title = "Toppage"
-url = "/"
+url = "/:page?"
 layout = "default"
 
 [blogPosts]
-pageNumber = "{{ ?page=:page }}"
+pageNumber = "{{ :page }}"
 postsPerPage = 10
 noPostsMessage = "No posts found"
 sortOrder = "published_at desc"
