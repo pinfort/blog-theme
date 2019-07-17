@@ -11,6 +11,7 @@
     ],
     "require": {
         "php": ">=7.0",
-        "rainlab/blog-plugin": "dev-master"
+        "rainlab/blog-plugin": "dev-master",
+        "rainlab/sitemap-plugin": "v1.0.9"
     }
 }
