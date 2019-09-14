@@ -1,4 +1,8 @@
 <article class="content">
+    <header class="post-header">
+        {% partial 'sharing/share_button' post=post %}
+    </header>
+
     {{ post.content_html|raw }}
     {% if post.featured_images.count %}
         <div class="featured-images text-center">
@@ -15,6 +19,7 @@
     {% endif %}
 
     <footer class="post-footer">
+        {% partial 'sharing/share_button' post=post %}
         Posted
         {% if post.categories.count %} in
             {% for category in post.categories %}
