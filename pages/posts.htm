@@ -11,7 +11,7 @@ categoryPage = "category-post"
 postPage = "post"
 ==
 function onStart() {
-    if ($this->param('page') === 1) {
+    if ($this->param('page') === '1') {
         return Redirect::to('/');
     }
 }
