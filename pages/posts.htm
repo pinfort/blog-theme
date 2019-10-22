@@ -10,6 +10,12 @@ sortOrder = "published_at desc"
 categoryPage = "category-post"
 postPage = "post"
 ==
+function onStart() {
+    if ($this->param('page') === 1) {
+        return Redirect::to('/');
+    }
+}
+==
 {% put title %}
     Pinfort&apos;s blog
 {% endput %}
