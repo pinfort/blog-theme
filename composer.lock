@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "39363cfbb14fc9b0114c58e6af99a228",
+    "content-hash": "2954e7efc8104231f382c0f87318b861",
     "packages": [
         {
             "name": "composer/installers",
@@ -128,16 +128,16 @@
         },
         {
             "name": "rainlab/blog-plugin",
-            "version": "dev-master",
+            "version": "v1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rainlab/blog-plugin.git",
-                "reference": "1c5554dc2d7c66ece549c8ba5e119483fc45c937"
+                "reference": "91582b3c790af8f517937dc02a4c96258cbbc4f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rainlab/blog-plugin/zipball/1c5554dc2d7c66ece549c8ba5e119483fc45c937",
-                "reference": "1c5554dc2d7c66ece549c8ba5e119483fc45c937",
+                "url": "https://api.github.com/repos/rainlab/blog-plugin/zipball/91582b3c790af8f517937dc02a4c96258cbbc4f8",
+                "reference": "91582b3c790af8f517937dc02a4c96258cbbc4f8",
                 "shasum": ""
             },
             "require": {
@@ -168,15 +168,13 @@
                 "october",
                 "octobercms"
             ],
-            "time": "2019-05-07T03:39:57+00:00"
+            "time": "2019-12-04T19:54:17+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "rainlab/blog-plugin": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

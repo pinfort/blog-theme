@@ -11,6 +11,6 @@
     ],
     "require": {
         "php": ">=7.0",
-        "rainlab/blog-plugin": "dev-master"
+        "rainlab/blog-plugin": "^1.4"
     }
 }
